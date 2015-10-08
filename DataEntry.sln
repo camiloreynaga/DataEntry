@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataEntry_Library", "DataEntry_Library\DataEntry_Library.csproj", "{A5D4E494-5A87-457E-AC40-384C9B2B3ED4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataEntry_app", "DataEntry_app\DataEntry_app.csproj", "{D73361A5-D9DA-4679-928A-F5AF7DE4E79C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5D4E494-5A87-457E-AC40-384C9B2B3ED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5D4E494-5A87-457E-AC40-384C9B2B3ED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5D4E494-5A87-457E-AC40-384C9B2B3ED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5D4E494-5A87-457E-AC40-384C9B2B3ED4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D73361A5-D9DA-4679-928A-F5AF7DE4E79C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D73361A5-D9DA-4679-928A-F5AF7DE4E79C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D73361A5-D9DA-4679-928A-F5AF7DE4E79C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D73361A5-D9DA-4679-928A-F5AF7DE4E79C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DataEntry_Library.Entities.Tablas.CondicionLaboral" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAAAAAAAAAAAAABAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Tablas\CondicionLaboral.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataEntry_Library.Entities.Tablas.Deporte" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAAAAAAAAAAAAABAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Tablas\Deporte.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataEntry_Library.Entities.Tablas.EstadoCivil" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAAAAAAAAAAAAABAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Tablas\EstadoCivil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataEntry_Library.Entities.Tablas.Pais" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAAAAAAAAAAAAABAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Tablas\Pais.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataEntry_Library.Entities.Tablas.Pasatiempo" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAAAAAAAAAAAAABAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Tablas\Pasatiempo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataEntry_Library.Entities.Tablas.SituacionCargo" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAAAAAAAAAAAAABAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Tablas\SituacionCargo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataEntry_Library.Entities.Tablas.TipoDocumento" Collapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAAAAAAAAAAAEABAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Tablas\TipoDocumento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataEntry_Library.Entities.Tablas.TipoPariente" Collapsed="true">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAAAAAAAAAAAAABAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Tablas\TipoPariente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataEntry_Library.Entities.Tablas.TipoVivienda" Collapsed="true">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAAAAAAAAAAAAABAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Tablas\TipoVivienda.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataEntry_Library.Entities.Tablas.UbigeoDistrito" Collapsed="true">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAAAAAAAAAAAAABCAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Tablas\UbigeoDistrito.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataEntry_Library.Entities.Tablas.UbigeoProvincia" Collapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAgQAAAAAAAAAAAAABAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Tablas\UbigeoProvincia.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataEntry_Library.Entities.Tablas.UbigeoRegion" Collapsed="true">
+    <Position X="8.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAAAAAAAAAAAAABAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Tablas\UbigeoRegion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataEntry_Library.Entities.Tablas.Via" Collapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAAAAAAAAAAAAABAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Tablas\Via.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataEntry_Library.Entities.Capacitacion" Collapsed="true">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAABAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Capacitacion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataEntry_Library.Entities.Cargo" Collapsed="true">
+    <Position X="16" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAQAAAgA=</HashCode>
+      <FileName>Entities\Cargo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataEntry_Library.Entities.ContactoEmergencia" Collapsed="true">
+    <Position X="9.25" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\ContactoEmergencia.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataEntry_Library.Entities.DatosLaborales" Collapsed="true">
+    <Position X="17.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAKgAAiRAAAgAAAAAAAAEAIAEAAAAABAAAAAAAAIAA=</HashCode>
+      <FileName>Entities\DatosLaborales.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataEntry_Library.Entities.Domicilio" Collapsed="true">
+    <Position X="14.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGQAAQgAAAEAAEAQQCAAAACCACABQAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Domicilio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataEntry_Library.Entities.Empleado" Collapsed="true">
+    <Position X="10.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAARRAAEBgAgAABAAAAIRAAAACAIgAEKQQAEAI=</HashCode>
+      <FileName>Entities\Empleado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataEntry_Library.Entities.ExperienciaLaboral" Collapsed="true">
+    <Position X="16" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ADACAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQACAAA=</HashCode>
+      <FileName>Entities\ExperienciaLaboral.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataEntry_Library.Entities.FormacionAcademica" Collapsed="true">
+    <Position X="7.75" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAEgAAAAAAAAAABAAAQAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Entities\FormacionAcademica.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataEntry_Library.Entities.Idioma" Collapsed="true">
+    <Position X="17.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAACAAAAAAAAAAAAAAAAgAAAAAAAAAgA=</HashCode>
+      <FileName>Entities\Idioma.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataEntry_Library.Entities.LugarNacimiento" Collapsed="true">
+    <Position X="14.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAQAAAAEAAQAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\LugarNacimiento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataEntry_Library.Entities.Pariente" Collapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAQ=</HashCode>
+      <FileName>Entities\Pariente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataEntry_Library.Entities.Persona" Collapsed="true">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAAAAAAAAAAAAkAgAgAAAAAAABAAACBAACAgCAAA=</HashCode>
+      <FileName>Entities\Persona.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataEntry_Library.Entities.PostGrado" Collapsed="true">
+    <Position X="6.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAQ=</HashCode>
+      <FileName>Entities\PostGrado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataEntry_Library.Entities.Profesion" Collapsed="true">
+    <Position X="9" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAACAAQAAABAAAAAAA=</HashCode>
+      <FileName>Entities\Profesion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

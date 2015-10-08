@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A5D4E494-5A87-457E-AC40-384C9B2B3ED4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataEntry_Library</RootNamespace>
+    <AssemblyName>DataEntry_Library</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>2a6de10f</NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\packages\FluentNHibernate.2.0.1.0\lib\net40\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\packages\Iesi.Collections.4.0.0.4000\lib\net40\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.6.2.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 6.6.2\Assemblies\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\packages\NHibernate.4.0.0.4000\lib\net40\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.98.1\lib\net45\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.98.1\lib\net45\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.98.1\lib\net45\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuracion\cPublica.cs" />
+    <Compile Include="Entities\Cargo.cs" />
+    <Compile Include="Entities\ContactoEmergencia.cs" />
+    <Compile Include="Entities\DatosLaborales.cs" />
+    <Compile Include="Entities\EspecialidadMedica.cs" />
+    <Compile Include="Entities\ExperienciaLaboral.cs" />
+    <Compile Include="Entities\FormacionAcademica.cs" />
+    <Compile Include="Entities\Capacitacion.cs" />
+    <Compile Include="Entities\Domicilio.cs" />
+    <Compile Include="Entities\Empleado.cs" />
+    <Compile Include="Entities\Idioma.cs" />
+    <Compile Include="Entities\IdiomaHabla.cs" />
+    <Compile Include="Entities\Log.cs" />
+    <Compile Include="Entities\LugarNacimiento.cs" />
+    <Compile Include="Entities\Ofimatica.cs" />
+    <Compile Include="Entities\Pariente.cs" />
+    <Compile Include="Entities\Persona.cs" />
+    <Compile Include="Entities\PostGrado.cs" />
+    <Compile Include="Entities\Profesion.cs" />
+    <Compile Include="Entities\Software.cs" />
+    <Compile Include="Entities\Tablas\CondicionLaboral.cs" />
+    <Compile Include="Entities\Tablas\Dependencia.cs" />
+    <Compile Include="Entities\Tablas\Deporte.cs" />
+    <Compile Include="Entities\Tablas\EstadoCivil.cs" />
+    <Compile Include="Entities\Tablas\GrupoOcupacional.cs" />
+    <Compile Include="Entities\Tablas\Pais.cs" />
+    <Compile Include="Entities\Tablas\Pasatiempo.cs" />
+    <Compile Include="Entities\Tablas\SituacionCargo.cs" />
+    <Compile Include="Entities\Tablas\TipoDocumento.cs" />
+    <Compile Include="Entities\Tablas\TipoPariente.cs" />
+    <Compile Include="Entities\Tablas\Via.cs" />
+    <Compile Include="Entities\Tablas\UbigeoDistrito.cs" />
+    <Compile Include="Entities\Tablas\UbigeoProvincia.cs" />
+    <Compile Include="Entities\Tablas\UbigeoRegion.cs" />
+    <Compile Include="Entities\Tablas\TipoVivienda.cs" />
+    <Compile Include="FluentiSessionFactori.cs" />
+    <Compile Include="Mapping\CapacitacionMap.cs" />
+    <Compile Include="Mapping\CargoMap.cs" />
+    <Compile Include="Mapping\ContactoEmergenciaMap.cs" />
+    <Compile Include="Mapping\DatosLaboralesMap.cs" />
+    <Compile Include="Mapping\DomicilioMap.cs" />
+    <Compile Include="Mapping\EmpleadoMap.cs" />
+    <Compile Include="Mapping\EspecialidadMedicaMap.cs" />
+    <Compile Include="Mapping\ExperienciaLaboralMap.cs" />
+    <Compile Include="Mapping\FormacionAcademicaMap.cs" />
+    <Compile Include="Mapping\IdiomaHablaMap.cs" />
+    <Compile Include="Mapping\IdiomaMap.cs" />
+    <Compile Include="Mapping\LogMap.cs" />
+    <Compile Include="Mapping\LugarNacimientoMap.cs" />
+    <Compile Include="Mapping\OfimaticaMap.cs" />
+    <Compile Include="Mapping\ParienteMap.cs" />
+    <Compile Include="Mapping\PersonaMap.cs" />
+    <Compile Include="Mapping\PostGradoMap.cs" />
+    <Compile Include="Mapping\ProfesionMap.cs" />
+    <Compile Include="Mapping\SoftwareMap.cs" />
+    <Compile Include="Mapping\Tablas\CondicionLaboralMap.cs" />
+    <Compile Include="Mapping\Tablas\DependenciaMap.cs" />
+    <Compile Include="Mapping\Tablas\DeporteMap.cs" />
+    <Compile Include="Mapping\Tablas\EstadoCivilMap.cs" />
+    <Compile Include="Mapping\Tablas\GrupoOcupacionalMap.cs" />
+    <Compile Include="Mapping\Tablas\PaisMap.cs" />
+    <Compile Include="Mapping\Tablas\PasaTiempoMap.cs" />
+    <Compile Include="Mapping\Tablas\SituacionCargoMap.cs" />
+    <Compile Include="Mapping\Tablas\TipoDocumentoMap.cs" />
+    <Compile Include="Mapping\Tablas\TipoParienteMap.cs" />
+    <Compile Include="Mapping\Tablas\TipoViviendaMap.cs" />
+    <Compile Include="Mapping\Tablas\UbigeoDistritoMap.cs" />
+    <Compile Include="Mapping\Tablas\UbigeoProvinciaMap.cs" />
+    <Compile Include="Mapping\Tablas\UbigeoRegionMap.cs" />
+    <Compile Include="Mapping\Tablas\ViaMap.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositorios\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.98.1\build\net45\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.98.1\build\net45\System.Data.SQLite.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Habilite la restauración del paquete NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.98.1\build\net45\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.98.1\build\net45\System.Data.SQLite.Core.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
