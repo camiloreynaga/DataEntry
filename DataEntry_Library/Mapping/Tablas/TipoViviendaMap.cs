@@ -12,7 +12,8 @@ namespace DataEntry_Library.Mapping
     {
         public TipoViviendaMap()
         {
-             Id(c => c.Id);
+            Table("tipo_vivienda");
+            Id(c => c.Id);
             Map(c => c.Codigo);
             Map(c => c.Descripcion);
             Map(c => c.Activo)

@@ -20,7 +20,7 @@ namespace DataEntry_Library
 {
     public class FluentiSessionFactori
     {
-        private static string DbFile = @"D:\firstProgram.db";
+        private static string DbFile = "firstProgram.db";
 
         private static string Cadena = cPublica.ArchivosGlovales.cadena;
 

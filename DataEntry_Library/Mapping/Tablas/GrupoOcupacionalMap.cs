@@ -12,6 +12,7 @@ namespace DataEntry_Library.Mapping.Tablas
     {
         public GrupoOcupacionalMap()
         {
+            Table("grupo_ocupacional");
             Id(c => c.Id);
             Map(c => c.Codigo);
             Map(c => c.Descripcion);

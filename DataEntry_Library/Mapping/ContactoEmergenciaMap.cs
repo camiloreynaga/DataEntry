@@ -12,6 +12,7 @@ namespace DataEntry_Library.Mapping
     {
         public ContactoEmergenciaMap()
         {
+            Table("contacto_emergencia");
         }
     }
 }

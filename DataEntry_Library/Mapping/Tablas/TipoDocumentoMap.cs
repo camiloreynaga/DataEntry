@@ -12,6 +12,7 @@ namespace DataEntry_Library.Mapping
     {
         public TipoDocumentoMap ()
         {
+            Table("tipo_documento");
             Id(c => c.Id);
             Map(c => c.Codigo);
             Map(c => c.Descripcion);

@@ -8,13 +8,15 @@ using System.Threading.Tasks;
 
 namespace DataEntry_Library.Mapping
 {
-    public class EspecialidadMedicaMap : SubclassMap<EspecialidadMedica>
+    public class EspecializacionMap : SubclassMap<Especializacion>
     {
-        public EspecialidadMedicaMap()
+        public EspecializacionMap()
         {
+            Table("especializacion");
             Map(c => c.Denominacion);
             Map(c => c.NumeroRegistroRNE);
             Map(c => c.AnioResidentado);
+            References(c => c.especialidad);
         }
     }
 }

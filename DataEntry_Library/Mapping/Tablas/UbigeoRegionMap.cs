@@ -12,6 +12,7 @@ namespace DataEntry_Library.Mapping
     {
         public UbigeoRegionMap()
         {
+            Table("ubigeo_region");
             Id(c => c.Id);
             Map(c => c.Codigo);
             Map(c => c.Descripcion);

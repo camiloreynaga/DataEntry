@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DataEntry_Library.Entities.Tablas;
 
 namespace DataEntry_Library.Entities
 {
-    public class EspecialidadMedica : FormacionAcademica
+    public class Especializacion : FormacionAcademica
     {
         /// <summary>
         /// denominación de la especializadad
@@ -20,6 +21,8 @@ namespace DataEntry_Library.Entities
         /// año en el que hizo su residentado
         /// </summary>
         public virtual string AnioResidentado { get; set; }
+
+        public virtual Especialidad especialidad { get; set; }
 
     }
 }

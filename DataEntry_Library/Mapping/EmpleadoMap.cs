@@ -1,5 +1,6 @@
 ﻿using FluentNHibernate.Mapping;
 using DataEntry_Library.Entities;
+using DataEntry_Library.Entities.Tablas;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,7 @@ namespace DataEntry_Library.Mapping
     {
         public EmpleadoMap()
         {
+            Table("empleado");
             Map(c => c.CodigoPlanilla);
             Map(c => c.CarnetExtranjeria);
             Map(c => c.GrupoSanguineo);
@@ -21,8 +23,12 @@ namespace DataEntry_Library.Mapping
             Map(c => c.DocIdentDiscapacidad);
             Map(c => c.NroResolucionEjecutiva);
             Map(c => c.Enfermedad);
-            HasMany(c => c.Deportes);
-            HasMany(c => c.Pasatiempos);
+            HasManyToMany<Deporte>(c => c.Deportes)
+                .Cascade.All()
+                .Table("deporte_empleado");
+            HasManyToMany<Pasatiempo>(c => c.Pasatiempos)
+                .Cascade.All()
+                .Table("pasatiempo_empleado");
             References(c => c.TipoVivienda);
             References(c => c.EstadoCivil);
             Map(c => c.TieneHijos);
@@ -32,7 +38,15 @@ namespace DataEntry_Library.Mapping
             HasMany(c => c.ContactosEmergencia);
             HasMany(c => c.DatosLaborales);
             HasMany(c => c.FormacionAcademica);
-            HasMany(c => c.Capacitaciones);
+            HasManyToMany<CapacitacionEmpleado>(x => x.Capacitaciones)
+                .Cascade.All()
+                .Component(c=>{
+                    c.Map(x=>x.Tiempo);
+                    c.Map(x=>x.Horas);
+                    c.Map(x=>x.Creditos);
+                    c.References<Capacitacion>(r=>r.Capacitaciones,"Capacitacion_id");
+                })
+                .Table("capacitacion_empleado");
             HasMany(c => c.Idiomas);
             HasMany(c => c.Ofimatica);
             HasMany(c => c.ExperienciasLaborales);

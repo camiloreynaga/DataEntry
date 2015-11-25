@@ -12,6 +12,7 @@ namespace DataEntry_Library.Mapping
     {
         public TipoParienteMap()
         {
+            Table("tipo_pariente");
             Id(c => c.Id);
             Map(c => c.Codigo);
             Map(c => c.Descripcion);

@@ -12,6 +12,7 @@ namespace DataEntry_Library.Mapping
     {
         public OfimaticaMap()
         {
+            Table("ofimatica");
             Id(c => c.Id);
             References(c => c.software);
             Map(c => c.Nivel);

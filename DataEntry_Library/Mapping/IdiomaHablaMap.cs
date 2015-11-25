@@ -12,6 +12,7 @@ namespace DataEntry_Library.Mapping
     {
         public IdiomaHablaMap()
         {
+            Table("idioma_habla");
             Id(c => c.Id);
             References(c => c.idioma);
             Map(c => c.Nivel);

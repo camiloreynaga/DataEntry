@@ -12,6 +12,7 @@ namespace DataEntry_Library.Mapping
     {
         public SoftwareMap()
         {
+            Table("software");
             Id(c => c.Id);
             Map(c => c.software);
             Map(c => c.Activo)

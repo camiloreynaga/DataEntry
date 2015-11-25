@@ -13,6 +13,7 @@ namespace DataEntry_Library.Mapping
     {
         public PersonaMap()
         {
+            Table("persona");
             Id(c => c.Id);
             Map(c => c.Nombre);
             Map(c => c.ApellidoPaterno);

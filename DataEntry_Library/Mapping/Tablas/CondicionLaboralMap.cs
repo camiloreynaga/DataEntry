@@ -12,11 +12,13 @@ namespace DataEntry_Library.Mapping
     {
         public CondicionLaboralMap()
         {
+            Table("condicion_laboral");
             Id(c => c.Id);
             Map(c => c.Codigo);
             Map(c => c.Descripcion);
             Map(c => c.Activo)
                 .Default("1");
+            
 
         }
     }

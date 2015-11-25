@@ -12,6 +12,7 @@ namespace DataEntry_Library.Mapping
     {
         public DomicilioMap()
         {
+            Table("domicilio");
             Id(c => c.Id);
             References(c => c.Region);
             References(c => c.Provincia);

@@ -12,6 +12,7 @@ namespace DataEntry_Library.Mapping
     {
         public ProfesionMap()
         {
+            Table("profesion");
             Map(c => c.ProfesionEspecialidad);
             Map(c => c.Universitario);
             Map(c => c.Titulado);

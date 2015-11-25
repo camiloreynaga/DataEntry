@@ -24,7 +24,7 @@ namespace DataEntry_Library.Entities
         /// <summary>
         /// grupo ocupacional al que pertenece
         /// </summary>
-        public virtual GrupoOcupacional GrupoOcupacional { get; set; }
+        public virtual LineaCarrera LineaCarrera { get; set; }
 
         /// <summary>
         /// nivel, escala actual, por años de experiencia

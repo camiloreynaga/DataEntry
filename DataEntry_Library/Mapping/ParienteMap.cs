@@ -12,6 +12,7 @@ namespace DataEntry_Library.Mapping
     {
         public ParienteMap()
         {
+            Table("pariente");
             References(c => c.Tipo);
             Map(c => c.trabajaEssalud);
         }

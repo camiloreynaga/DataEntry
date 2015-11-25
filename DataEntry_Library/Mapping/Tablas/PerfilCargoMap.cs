@@ -6,21 +6,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataEntry_Library.Mapping
+namespace DataEntry_Library.Mapping.Tablas
 {
-    public class UbigeoProvinciaMap : ClassMap<UbigeoProvincia>
+    public class PerfilCargoMap: ClassMap<PerfilCargo>
     {
-        public UbigeoProvinciaMap()
+        public PerfilCargoMap()
         {
-            Table("ubigeo_provincia");
+            Table("perfil_cargo");
             Id(c => c.Id);
             Map(c => c.Codigo);
             Map(c => c.Descripcion);
-            References(c => c.Region);
             Map(c => c.Activo)
                 .Default("1");
-            //Id(c => c.Id);
-            
         }
     }
 }

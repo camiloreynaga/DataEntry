@@ -12,6 +12,7 @@ namespace DataEntry_Library.Mapping
     {
         public SituacionCargoMap()
         {
+            Table("situacion_cargo");
             Id(c => c.Id);
             Map(c => c.Codigo);
             Map(c => c.Descripcion);

@@ -12,6 +12,7 @@ namespace DataEntry_Library.Mapping
     {
         public ExperienciaLaboralMap()
         {
+            Table("experiencia_laboral");
             Id(c => c.Id);
             Map(c => c.Empresa);
             References(c => c.Cargo);

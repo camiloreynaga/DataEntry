@@ -4,14 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataEntry_Library.Entities
+namespace DataEntry_Library.Entities.Tablas
 {
-     public class Capacitacion
+    public class Clase
     {
         public virtual int Id { get; set; }
-        //public virtual string Codigo { get; set; }
+        public virtual string Codigo { get; set; }
         public virtual string Descripcion { get; set; }
         public virtual bool Activo { get; set; }
-        public virtual IList<Empleado> EmpleadoCapacitados { get; set; }
     }
 }

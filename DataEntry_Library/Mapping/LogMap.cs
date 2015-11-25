@@ -12,6 +12,7 @@ namespace DataEntry_Library.Mapping
     {
         public LogMap()
         {
+            Table("log");
             Id(c => c.Id);
             Map(c => c.Fecha);
             Map(c => c.Tabla);

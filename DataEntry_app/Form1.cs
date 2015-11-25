@@ -24,13 +24,13 @@ namespace DataEntry_app
         private void btnGenerarBD_Click(object sender, EventArgs e)
         {
 
-            lecturadeArchivo();
+            lecturadeArchivo("archivoMySql.txt");
 
             cPublica.ArchivosGlovales.cadena = textos[0].ToString().Trim();
             cPublica.ArchivosGlovales.valorInicial = textos[1].ToString().Trim();
 
-           // FluentiSessionFactori.InitializeSessionFactoryMysql();
-            FluentiSessionFactori.InitializeSessionFactorySqLite();
+           FluentiSessionFactori.InitializeSessionFactoryMysql();
+            //FluentiSessionFactori.InitializeSessionFactorySqLite();
             MessageBox.Show("BD CREADA, GENIAL!", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
             
           
@@ -60,6 +60,45 @@ namespace DataEntry_app
                 MessageBox.Show("Error al leer el archivo de texto plano: " + ex.Message);
             }
 
+        }
+
+        /// <summary>
+        /// metodo leer archivo 
+        /// </summary>
+        /// <param name="archivo"></param>
+        public void lecturadeArchivo(string archivo)
+        {
+            int counter = 0;
+            string line;
+            try
+            {
+                // Read the file and display it line by line.
+                StreamReader file = new System.IO.StreamReader(@""+archivo);
+                while ((line = file.ReadLine()) != null)
+                {
+                    textos[counter] = line;
+                    counter++;
+                }
+
+                file.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al leer el archivo de texto plano: " + ex.Message);
+            }
+
+        }
+
+        private void btnDbMsSql_Click(object sender, EventArgs e)
+        {
+            lecturadeArchivo("archivoMsSql.txt");
+
+            cPublica.ArchivosGlovales.cadena = textos[0].ToString().Trim();
+            cPublica.ArchivosGlovales.valorInicial = textos[1].ToString().Trim();
+
+            FluentiSessionFactori.InitializeSessionFactoryMsSql();
+            //FluentiSessionFactori.InitializeSessionFactorySqLite();
+            MessageBox.Show("BD CREADA, GENIAL!", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

@@ -12,6 +12,7 @@ namespace DataEntry_Library.Mapping
     {
         public EstadoCivilMap()
         {
+            Table("estado_civil");
             Id(c => c.Id);
             Map(c => c.Codigo);
             Map(c => c.Descripcion);

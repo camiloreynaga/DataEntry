@@ -12,6 +12,7 @@ namespace DataEntry_Library.Mapping
     {
         public FormacionAcademicaMap()
         {
+            Table("formacion_academica");
             Id(c => c.Id);
             Map(c => c.Grado);
             Map(c => c.Institucion);

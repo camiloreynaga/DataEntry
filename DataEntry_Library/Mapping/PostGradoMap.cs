@@ -12,6 +12,7 @@ namespace DataEntry_Library.Mapping
     {
         public PostGradoMap()
         {
+            Table("postgrado");
             Map(c => c.Tipo);
             Map(c => c.Denominacion);
         }

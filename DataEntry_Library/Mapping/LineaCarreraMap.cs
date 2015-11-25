@@ -1,5 +1,5 @@
 ﻿using FluentNHibernate.Mapping;
-using DataEntry_Library.Entities.Tablas;
+using DataEntry_Library.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,19 +8,21 @@ using System.Threading.Tasks;
 
 namespace DataEntry_Library.Mapping
 {
-    public class UbigeoProvinciaMap : ClassMap<UbigeoProvincia>
+    public class LineaCarreraMap : ClassMap<LineaCarrera>
     {
-        public UbigeoProvinciaMap()
+        public LineaCarreraMap()
         {
-            Table("ubigeo_provincia");
+            Table("linea_carrera");
             Id(c => c.Id);
             Map(c => c.Codigo);
+            Map(c => c.TipoArea);
             Map(c => c.Descripcion);
-            References(c => c.Region);
+            References(c => c.supcargo);
+            References(c => c.grupoOcupacional);
+            References(c => c.nivel);
+            References(c => c.clase);
             Map(c => c.Activo)
                 .Default("1");
-            //Id(c => c.Id);
-            
         }
     }
 }

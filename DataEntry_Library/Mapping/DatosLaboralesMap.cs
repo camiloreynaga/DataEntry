@@ -12,10 +12,11 @@ namespace DataEntry_Library.Mapping
     {
         public DatosLaboralesMap()
         {
+            Table("datos_laborales");
             Id(c => c.Id);
             References(c => c.CondicionLaboral);
             References(c => c.SituacionCargo);
-            References(c => c.GrupoOcupacional);
+            References(c => c.LineaCarrera);
             Map(c => c.Nivel);
             References(c => c.Cargo);
             Map(c => c.FechaIngreso);

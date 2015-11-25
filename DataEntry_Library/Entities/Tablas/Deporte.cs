@@ -12,5 +12,6 @@ namespace DataEntry_Library.Entities.Tablas
         public virtual string Codigo { get; set; }
         public virtual string Descripcion { get; set; }
         public virtual bool Activo { get; set; }
+        public virtual IList<Empleado> EmpleadosDeportistas { get; set; }
     }
 }

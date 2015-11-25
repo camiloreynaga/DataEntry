@@ -29,23 +29,35 @@
         private void InitializeComponent()
         {
             this.btnGenerarBD = new System.Windows.Forms.Button();
+            this.btnDbMsSql = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnGenerarBD
             // 
             this.btnGenerarBD.Location = new System.Drawing.Point(12, 12);
             this.btnGenerarBD.Name = "btnGenerarBD";
-            this.btnGenerarBD.Size = new System.Drawing.Size(75, 23);
+            this.btnGenerarBD.Size = new System.Drawing.Size(109, 23);
             this.btnGenerarBD.TabIndex = 0;
-            this.btnGenerarBD.Text = "Generar BD";
+            this.btnGenerarBD.Text = "Generar BD MySql";
             this.btnGenerarBD.UseVisualStyleBackColor = true;
             this.btnGenerarBD.Click += new System.EventHandler(this.btnGenerarBD_Click);
+            // 
+            // btnDbMsSql
+            // 
+            this.btnDbMsSql.Location = new System.Drawing.Point(12, 65);
+            this.btnDbMsSql.Name = "btnDbMsSql";
+            this.btnDbMsSql.Size = new System.Drawing.Size(109, 23);
+            this.btnDbMsSql.TabIndex = 0;
+            this.btnDbMsSql.Text = "Generar BD MsSql";
+            this.btnDbMsSql.UseVisualStyleBackColor = true;
+            this.btnDbMsSql.Click += new System.EventHandler(this.btnDbMsSql_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(239, 148);
+            this.Controls.Add(this.btnDbMsSql);
             this.Controls.Add(this.btnGenerarBD);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -56,6 +68,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnGenerarBD;
+        private System.Windows.Forms.Button btnDbMsSql;
     }
 }
 

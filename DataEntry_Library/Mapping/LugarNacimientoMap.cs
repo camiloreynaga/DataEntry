@@ -12,6 +12,7 @@ namespace DataEntry_Library.Mapping
     {
         public LugarNacimientoMap()
         {
+            Table("lugar_nacimiento");
             Id(c => c.Id);
             References(c => c.Pais);
             References(c => c.Departamento);
