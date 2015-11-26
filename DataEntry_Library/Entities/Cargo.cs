@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 using DataEntry_Library.Entities.Tablas;
 namespace DataEntry_Library.Entities
 {
+    /// <summary>
+    /// El cargo, es el nombre a detalle del cargo que ocupa el empleado
+    /// considera su Nivel (I-...) Clase (A-...) Grupo Ocupacional ( 
+    /// </summary>
     public class Cargo
     {
 

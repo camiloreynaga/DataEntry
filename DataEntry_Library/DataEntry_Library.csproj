@@ -70,6 +70,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Configuracion\cPublica.cs" />
+    <Compile Include="Entities\DocumentosEmpleado.cs" />
+    <Compile Include="Entities\Tablas\AmbitoSeccion.cs" />
     <Compile Include="Entities\CapacitacionEmpleado.cs" />
     <Compile Include="Entities\Cargo.cs" />
     <Compile Include="Entities\ContactoEmergencia.cs" />
@@ -108,6 +110,7 @@
     <Compile Include="Entities\Tablas\Pasatiempo.cs" />
     <Compile Include="Entities\Tablas\SituacionCargo.cs" />
     <Compile Include="Entities\Tablas\TipoDocumento.cs" />
+    <Compile Include="Entities\Tablas\TipoDocumentoIdentidad.cs" />
     <Compile Include="Entities\Tablas\TipoPariente.cs" />
     <Compile Include="Entities\Tablas\Via.cs" />
     <Compile Include="Entities\Tablas\UbigeoDistrito.cs" />
@@ -120,6 +123,7 @@
     <Compile Include="Mapping\CargoMap.cs" />
     <Compile Include="Mapping\ContactoEmergenciaMap.cs" />
     <Compile Include="Mapping\DatosLaboralesMap.cs" />
+    <Compile Include="Mapping\DocumentosEmpleadoMap.cs" />
     <Compile Include="Mapping\DomicilioMap.cs" />
     <Compile Include="Mapping\EmpleadoMap.cs" />
     <Compile Include="Mapping\EspecializacionMap.cs" />
@@ -136,6 +140,7 @@
     <Compile Include="Mapping\PostGradoMap.cs" />
     <Compile Include="Mapping\ProfesionMap.cs" />
     <Compile Include="Mapping\SoftwareMap.cs" />
+    <Compile Include="Mapping\Tablas\AmbitoSeccionMap.cs" />
     <Compile Include="Mapping\Tablas\CapMap.cs" />
     <Compile Include="Mapping\Tablas\ClaseMap.cs" />
     <Compile Include="Mapping\Tablas\CondicionLaboralMap.cs" />
@@ -148,9 +153,11 @@
     <Compile Include="Mapping\Tablas\PerfilCargoMap.cs" />
     <Compile Include="Mapping\Tablas\PaisMap.cs" />
     <Compile Include="Mapping\Tablas\PasaTiempoMap.cs" />
+    <Compile Include="Mapping\Tablas\SeccionMap.cs" />
     <Compile Include="Mapping\Tablas\SituacionCargoMap.cs" />
     <Compile Include="Mapping\Tablas\SupcargoMap.cs" />
     <Compile Include="Mapping\Tablas\SupestructuraMap.cs" />
+    <Compile Include="Mapping\Tablas\TipoDocumentoIdentidadMap.cs" />
     <Compile Include="Mapping\Tablas\TipoDocumentoMap.cs" />
     <Compile Include="Mapping\Tablas\TipoParienteMap.cs" />
     <Compile Include="Mapping\Tablas\TipoViviendaMap.cs" />

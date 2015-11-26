@@ -15,7 +15,7 @@ namespace DataEntry_Library.Entities
         public virtual string ApellidoPaterno { get; set; } //apellido paterno
         public virtual string ApellidoMaterno { get; set; } //apellido materno
 
-        public virtual TipoDocumento TipoDocumento { get; set; }
+        public virtual TipoDocumentoIdentidad TipoDocumento { get; set; }
         public virtual string NumeroDocumento { get; set; }
        
         

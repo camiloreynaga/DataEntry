@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace DataEntry_Library.Mapping.Tablas
 {
-    public class TipoDocumentoMap : ClassMap<TipoDocumento>
+    public class SeccionMap: ClassMap<Seccion>
     {
-        public TipoDocumentoMap()
+        public SeccionMap()
         {
-            Table("tipo_documento");
+            Table("seccion");
             Id(c => c.Id);
             Map(c => c.Codigo);
             Map(c => c.Descripcion);

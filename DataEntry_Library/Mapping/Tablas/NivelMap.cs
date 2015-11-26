@@ -16,8 +16,8 @@ namespace DataEntry_Library.Mapping.Tablas
             Id(c => c.Id);
             Map(c => c.Codigo);
             Map(c => c.Descripcion);
-            Map(c => c.Activo);
-//                .Default("1");
+            Map(c => c.Activo)
+                .Default("1");
         }
     }
 }

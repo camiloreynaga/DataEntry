@@ -6,16 +6,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataEntry_Library.Mapping.Tablas
+namespace DataEntry_Library.Mapping
 {
-    public class TipoDocumentoMap : ClassMap<TipoDocumento>
+    public class TipoDocumentoIdentidadMap: ClassMap<TipoDocumentoIdentidad>
     {
-        public TipoDocumentoMap()
+        public TipoDocumentoIdentidadMap ()
         {
-            Table("tipo_documento");
+            Table("tipo_documento_identidad");
             Id(c => c.Id);
             Map(c => c.Codigo);
             Map(c => c.Descripcion);
+            Map(c => c.DescripcionAbreviada);
             Map(c => c.Activo)
                 .Default("1");
         }

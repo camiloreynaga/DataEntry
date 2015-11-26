@@ -8,14 +8,15 @@ using System.Threading.Tasks;
 
 namespace DataEntry_Library.Mapping.Tablas
 {
-    public class TipoDocumentoMap : ClassMap<TipoDocumento>
+    public class AmbitoSeccionMap : ClassMap<AmbitoSeccion>
     {
-        public TipoDocumentoMap()
+        public AmbitoSeccionMap()
         {
-            Table("tipo_documento");
+            Table("ambito_seccion");
             Id(c => c.Id);
             Map(c => c.Codigo);
             Map(c => c.Descripcion);
+            References(c => c.seccion);
             Map(c => c.Activo)
                 .Default("1");
         }
