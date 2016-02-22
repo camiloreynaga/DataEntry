@@ -8,16 +8,18 @@ using System.Threading.Tasks;
 
 namespace DataEntry_Library.Mapping
 {
-    public class LugarNacimientoMap: ClassMap<LugarNacimiento>
+    public class LugarNacimientoMap : ComponentMap<LugarNacimiento>
     {
         public LugarNacimientoMap()
         {
-            Table("lugar_nacimiento");
-            Id(c => c.Id);
+            
+            //Table("lugar_nacimiento");
+            //Id(c => c.Id);
             References(c => c.Pais);
-            References(c => c.Departamento);
+            References(c => c.Region);
             References(c => c.Provincia);
             References(c => c.Distrito);
+            //References(c => c.persona);
 
         }
     }

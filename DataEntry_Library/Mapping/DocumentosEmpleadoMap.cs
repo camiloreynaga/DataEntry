@@ -12,6 +12,7 @@ namespace DataEntry_Library.Mapping
     {
         public DocumentosEmpleadoMap()
         {
+            Table("documentos_empleado");
             Id(c => c.Id);
             References(c => c.ambitoSeccion);
             References(c => c.tipoDocumento);

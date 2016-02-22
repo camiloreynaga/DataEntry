@@ -20,11 +20,13 @@ namespace DataEntry_Library.Entities
        
         
         public virtual DateTime FechaNacimiento { get; set; }
-        
+
+        public virtual LugarNacimiento LugarNacimiento { get; set; }
+
         /// <summary>
         /// 1: masculino / 2: femenino. Dato obligatorio
         /// </summary>
-        public virtual char Sexo { get; set; }
+        public virtual int Sexo { get; set; }
 
         public virtual IList<Domicilio> Domicilio { get; set; }
         //public virtual Direccion Direccion2 { get; set; }
@@ -34,6 +36,9 @@ namespace DataEntry_Library.Entities
 
         public virtual string CorreoElectronico { get; set; }
         public virtual string CorreoElectronico2 { get; set; }
+
+        //id del usuario
+        public virtual int user_id { get; set; }
         
     }
 }

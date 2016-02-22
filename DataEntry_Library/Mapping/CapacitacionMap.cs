@@ -12,6 +12,7 @@ namespace DataEntry_Library.Mapping
     {
         public CapacitacionMap()
         {
+            //para la tabla de la app DataEntryWeb, se a añadido un campo, ID como primary Key de EmpleadoCapacitacion
             Table("capacitacion");
             Id(c => c.Id);
             Map(c => c.Descripcion);

@@ -30,6 +30,8 @@ namespace DataEntry_app
             cPublica.ArchivosGlovales.valorInicial = textos[1].ToString().Trim();
 
            FluentiSessionFactori.InitializeSessionFactoryMysql();
+            
+            
             //FluentiSessionFactori.InitializeSessionFactorySqLite();
             MessageBox.Show("BD CREADA, GENIAL!", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
             

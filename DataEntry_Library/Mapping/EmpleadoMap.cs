@@ -14,10 +14,20 @@ namespace DataEntry_Library.Mapping
         public EmpleadoMap()
         {
             Table("empleado");
-            Map(c => c.CodigoPlanilla);
-            Map(c => c.CarnetExtranjeria);
-            Map(c => c.GrupoSanguineo);
-            Map(c => c.Ruc);
+            Map(c => c.CodigoPlanilla)
+                .CustomType("Int32")
+                .Length(7);
+                //.Not.Nullable()
+                //.Unique();
+            Map(c => c.CarnetExtranjeria)
+                .CustomType("String")
+                .Length(10);
+            Map(c => c.GrupoSanguineo)
+                .CustomType("String")
+                .Length(3);
+            Map(c => c.Ruc)
+                .CustomType("String")
+                .Length(11);
             Map(c => c.LibretaMilitar);
             Map(c => c.Discapacidad);
             Map(c => c.DocIdentDiscapacidad);

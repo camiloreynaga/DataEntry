@@ -71,6 +71,8 @@
   <ItemGroup>
     <Compile Include="Configuracion\cPublica.cs" />
     <Compile Include="Entities\DocumentosEmpleado.cs" />
+    <Compile Include="Entities\Role.cs" />
+    <Compile Include="Entities\Status.cs" />
     <Compile Include="Entities\Tablas\AmbitoSeccion.cs" />
     <Compile Include="Entities\CapacitacionEmpleado.cs" />
     <Compile Include="Entities\Cargo.cs" />
@@ -117,6 +119,7 @@
     <Compile Include="Entities\Tablas\UbigeoProvincia.cs" />
     <Compile Include="Entities\Tablas\UbigeoRegion.cs" />
     <Compile Include="Entities\Tablas\TipoVivienda.cs" />
+    <Compile Include="Entities\UserType.cs" />
     <Compile Include="Entities\Usuario.cs" />
     <Compile Include="FluentiSessionFactori.cs" />
     <Compile Include="Mapping\CapacitacionMap.cs" />
@@ -139,7 +142,9 @@
     <Compile Include="Mapping\PersonaMap.cs" />
     <Compile Include="Mapping\PostGradoMap.cs" />
     <Compile Include="Mapping\ProfesionMap.cs" />
+    <Compile Include="Mapping\RoleMap.cs" />
     <Compile Include="Mapping\SoftwareMap.cs" />
+    <Compile Include="Mapping\StatusMap.cs" />
     <Compile Include="Mapping\Tablas\AmbitoSeccionMap.cs" />
     <Compile Include="Mapping\Tablas\CapMap.cs" />
     <Compile Include="Mapping\Tablas\ClaseMap.cs" />
@@ -165,6 +170,8 @@
     <Compile Include="Mapping\Tablas\UbigeoProvinciaMap.cs" />
     <Compile Include="Mapping\Tablas\UbigeoRegionMap.cs" />
     <Compile Include="Mapping\Tablas\ViaMap.cs" />
+    <Compile Include="Mapping\UserTypeMap.cs" />
+    <Compile Include="Mapping\UsuarioMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
